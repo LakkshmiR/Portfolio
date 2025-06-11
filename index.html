@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-... (truncated for brevity) ..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <span>Portfolio</span>
+        </div>
+        <div class="links">
+          <div class="link"><a href="#">Home</a></div>
+          <div class="link"><a href="#">About</a></div>
+          <div class="link"><a href="#">Skills</a></div>
+          <div class="link"><a href="#">Services</a></div>
+          <div class="link"><a href="#">Blog</a></div>
+          <div class="link contact-btn"><a href="#">Contact</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+      </div>
+      <div class="dropdown">
+        <div class="links">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Skills</a>
+          <a href="">Services</a>
+          <a href="">Blog</a>
+          <a href="">Contact</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="main-container">
+        <div class="image">
+          <img src="C:\Users\baska\Desktop\yoonseri.png" alt="" />
+        </div>
+        <div class="content">
+          <h1>Hey I'm<span>Lakkshmi</span></h1>
+          <div class="typewriter">I'm a<span></span></div>
+          <p>
+            I am an enthusiastic final-year Computer Science Engineering student, I am passionate
+            about securing a role in a well-regarded company. I possess strong proficiency in Java,
+            C, and Python, and have foundational knowledge in JavaScript, HTML, and CSS. My
+            dedication to continuous learning and my drive to achieve excellence make me a strong
+            candidate for software development roles.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <div class="btn">
+            <button>Download</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function hamburg() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(0px)";
+      }
+      function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(-500px)";
+      }
+    </script>
+  </body>
+</html>
